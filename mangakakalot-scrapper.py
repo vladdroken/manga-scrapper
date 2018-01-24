@@ -26,7 +26,7 @@ def main():
         def download_image(image_response, image_number):
             path_directory = "{}/Downloads/{}/{}/".format(SCRIPT_DIR, serie, chapter)
             file_name = "{}.png".format("img-" + "%03d" % (image_number,))
-            if image_response.status_code == 200:
+            if image_response.status_code == 200
                 if not os.path.exists(path_directory):
                     os.makedirs(path_directory)
                 with open(path_directory + file_name, 'wb') as out_file:
@@ -36,7 +36,6 @@ def main():
                     print file_name
             else:
                 print image_response.status_code
-
         counter = 0;
         for img in image_list[0]:
             download_image(scrape.get(img['src']), counter)
