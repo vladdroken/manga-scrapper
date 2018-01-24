@@ -4,7 +4,7 @@ Small Python scripts to download chapters from manganelo/mangakakalot and tuMang
 
 ## Requirement
     
-    Python 2.7.X Algo
+    Python 2.7.X
     --------------
     BeautifulSoup
     cfscrape
